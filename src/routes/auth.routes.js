@@ -6,8 +6,8 @@ import { requireAuth } from "../middlewares/auth.js";
 
 const router = Router();
 
-router.post('/register', validateBody(registerSchema), AuthCtrl.register);
-router.post('/login', validateBody(loginSchema), AuthCtrl.login);
-router.post('/me', requireAuth, AuthCtrl.me);
+router.post('/register', validateBody(registerSchema),AuthCtrl.register);
+router.post('/login', validateBody(loginSchema) ,AuthCtrl.login);
+router.post('/me', requireAuth,AuthCtrl.me);
 
 export default router;
