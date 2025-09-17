@@ -1,0 +1,5 @@
+{
+    "conventionalCommits.scopes": [
+        "Se generan los servicios asociados a auth (del usuario)"
+    ]
+}
